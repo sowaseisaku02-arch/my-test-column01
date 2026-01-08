@@ -1,198 +1,200 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>放射とは何か？｜熱の伝わり方の基本</title>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>放射とは何か？｜熱の伝わり方の基本</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #000;
-      color: #fff;
-      line-height: 1.8;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.8;
+}
 
-    #site {
-      display: none;
-    }
+#site { display: none; }
 
-    /* ===== コラム全体 ===== */
-    .column-container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 8%;
-    }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
-    /* ===== タイトル ===== */
-    .column-title {
-      font-size: 32px;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
+/* ===== ヘッダー ===== */
+.page-header img {
+  width: 100%;
+}
 
-    .column-title span {
-      display: block;
-      font-size: 16px;
-      font-weight: 400;
-      opacity: 0.7;
-      margin-top: 8px;
-    }
+/* ===== フル幅ヒーロー ===== */
+.column-hero {
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  background-image: url("images/column-hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-    /* ===== リード文 ===== */
-    .column-lead {
-      font-size: 18px;
-      margin-bottom: 60px;
-    }
+/* ===== 本文 ===== */
+.column-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 8%;
+}
 
-    /* ===== 見出し ===== */
-    .column-container h2 {
-      font-size: 22px;
-      margin: 80px 0 20px;
-      font-weight: 600;
-    }
+.column-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
 
-    /* ===== 本文 ===== */
-    .column-container p {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
+.column-title span {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-top: 8px;
+}
 
-    /* ===== 画像 ===== */
-    .column-image {
-      margin: 40px 0;
-    }
+.column-lead {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
 
-    .column-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.column-container h2 {
+  font-size: 22px;
+  margin: 80px 0 20px;
+  font-weight: 600;
+}
 
-    .column-image figcaption {
-      font-size: 12px;
-      opacity: 0.6;
-      margin-top: 8px;
-    }
+.column-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-    /* ===== フッター ===== */
-    .page-footer img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+/* ===== 本文画像 ===== */
+.column-image {
+  margin: 40px 0;
+}
 
-    /* ===== エラー ===== */
-    #error {
-      display: none;
-      text-align: center;
-      margin-top: 40vh;
-      font-size: 14px;
-    }
+.column-image figcaption {
+  font-size: 12px;
+  color: #666;
+  margin-top: 8px;
+}
 
-    /* ===== スマホ ===== */
-    @media (max-width: 768px) {
-      .column-container {
-        padding: 50px 6%;
-      }
+/* ===== フッター ===== */
+.page-footer img {
+  width: 100%;
+}
 
-      .column-title {
-        font-size: 24px;
-      }
+/* ===== エラー ===== */
+#error {
+  display: none;
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 14px;
+}
 
-      .column-lead {
-        font-size: 16px;
-      }
+/* ===== スマホ ===== */
+@media (max-width: 768px) {
+  .column-hero {
+    height: 40vh;
+  }
 
-      .column-container h2 {
-        font-size: 18px;
-        margin-top: 60px;
-      }
-    }
-  </style>
+  .column-container {
+    padding: 50px 6%;
+  }
+
+  .column-title {
+    font-size: 24px;
+  }
+
+  .column-lead {
+    font-size: 16px;
+  }
+
+  .column-container h2 {
+    font-size: 18px;
+    margin-top: 60px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div id="site">
+<div id="site">
 
-    <main class="column-container">
+  <!-- ヘッダー -->
+  <header class="page-header">
+    <img src="images/header-image.png" alt="">
+  </header>
 
-      <h1 class="column-title">
-        放射とは何か？
-        <span>― 熱の伝わり方の基本</span>
-      </h1>
+  <!-- ヒーロー -->
+  <section class="column-hero"></section>
 
-      <p class="column-lead">
-        私たちが「暑い」「寒い」と感じるとき、その感覚は空気の温度だけで決まっているわけではありません。
-        周囲の床や壁、天井などからどのように熱が伝わってくるかが、快適性に大きく影響しています。
-        その鍵となるのが「放射（輻射）」という熱の伝わり方です。
-      </p>
+  <!-- 本文 -->
+  <main class="column-container">
 
-      <figure class="column-image">
-        <img src="../assets/images/column_radiation_01.jpg" alt="熱の伝わり方のイメージ">
-        <figcaption>熱は「伝導・対流・放射」の3つの方法で伝わります</figcaption>
-      </figure>
+    <h1 class="column-title">
+      放射とは何か？
+      <span>― 熱の伝わり方の基本</span>
+    </h1>
 
-      <h2>熱の伝わり方は3種類ある</h2>
-      <p>
-        熱の伝わり方には、大きく分けて「伝導」「対流」「放射」の3つがあります。
-        一般的な空調は、空気を動かす「対流」を利用していますが、
-        放射はそれとは異なる仕組みで室内環境に影響を与えます。
-      </p>
+    <p class="column-lead">
+      私たちが「暑い」「寒い」と感じるとき、その感覚は空気の温度だけで決まっているわけではありません。
+      周囲の床や壁、天井などからどのように熱が伝わってくるかが、快適性に大きく影響しています。
+      その鍵となるのが「放射（輻射）」という熱の伝わり方です。
+    </p>
 
-      <figure class="column-image">
-        <img src="../assets/images/column_radiation_02.jpg" alt="対流と放射の違い">
-        <figcaption>空気を動かす対流と、面から伝わる放射の違い</figcaption>
-      </figure>
+    <figure class="column-image">
+      <img src="images/column_radiation_01.jpg" alt="">
+      <figcaption>熱は「伝導・対流・放射」の3つの方法で伝わります</figcaption>
+    </figure>
 
-      <h2>放射とは「空気を介さずに」熱が伝わること</h2>
-      <p>
-        放射とは、熱が電磁波として空間を移動し、物体に直接伝わる現象です。
-        太陽の熱が宇宙空間を通って地球に届くように、放射は空気がなくても伝わります。
-      </p>
+    <h2>熱の伝わり方は3種類ある</h2>
+    <p>
+      熱の伝わり方には、「伝導」「対流」「放射」の3つがあります。
+      一般的な空調は空気を動かす対流を利用していますが、
+      放射は空気をほとんど動かさずに熱を伝える点が特徴です。
+    </p>
 
-      <p>
-        冬の日なたが暖かく感じられるのは、太陽からの放射熱を体が直接受け取っているためです。
-        反対に、冷えた壁や床の近くで寒く感じるのも、
-        放射によって体の熱が奪われているためです。
-      </p>
+    <figure class="column-image">
+      <img src="images/column_radiation_02.jpg" alt="">
+      <figcaption>対流と放射では、体感の質が大きく異なります</figcaption>
+    </figure>
 
-      <figure class="column-image">
-        <img src="../assets/images/column_radiation_03.jpg" alt="体感温度の違い">
-        <figcaption>同じ気温でも、放射の違いで体感は変わります</figcaption>
-      </figure>
+    <h2>放射は快適な空間づくりの基本原理</h2>
+    <p>
+      放射は目に見えませんが、体感温度や快適性に大きな影響を与えます。
+      次回は、この原理を応用した「放射を利用した空調」について解説します。
+    </p>
 
-      <h2>放射は快適な空間づくりの基本原理</h2>
-      <p>
-        放射は目に見えませんが、私たちの快適性に大きな影響を与える重要な要素です。
-        次回は、この放射の仕組みを空調に応用した
-        「放射を利用した空調」について詳しく解説します。
-      </p>
+  </main>
 
-    </main>
+  <!-- フッター -->
+  <footer class="page-footer">
+    <img src="images/footer-image.png" alt="">
+  </footer>
 
-    <!-- フッター画像 -->
-    <footer class="page-footer">
-      <img src="../assets/images/footer-image.png" alt="">
-    </footer>
+</div>
 
-  </div>
+<div id="error">アクセスできません</div>
 
-  <div id="error">アクセスできません</div>
+<script>
+const PASSWORD = "sowa2026";
+const input = prompt("パスワードを入力してください");
 
-  <script>
-    const PASSWORD = "sowa2026";
-    const input = prompt("パスワードを入力してください");
-
-    if (input === PASSWORD) {
-      document.getElementById("site").style.display = "block";
-    } else {
-      document.getElementById("error").style.display = "block";
-    }
-  </script>
+if (input === PASSWORD) {
+  document.getElementById("site").style.display = "block";
+} else {
+  document.getElementById("error").style.display = "block";
+}
+</script>
 
 </body>
 </html>
